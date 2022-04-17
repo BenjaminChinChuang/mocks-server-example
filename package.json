@@ -1,0 +1,25 @@
+{
+  "name": "mocks-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "mocks-server",
+    "serve": "mocks-server --no-cli"
+  },
+  "dependencies": {
+    "@mocks-server/main": "^2.4.0",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/register": "^7.16.0",
+    "nodemon": "^2.0.15"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@utils": "mocks/utils",
+    "@data": "mocks/data"
+  }
+}
